@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1dfb3c5cbc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main>
+      <div class="generate">
+        <h1>Generate a<br /><span class="green-text">random password</span></h1>
+        <p class="gray-text">Never use an insecure password again.</p>
+        <form>
+          <div class="options">
+            <label>
+              # Characters:
+              <input type="number" name="numchars" id="numchars" value="24" />
+            </label>
+            <label>
+              Numbers
+              <input type="checkbox" name="numbers" id="numbers" checked />
+            </label>
+            <label>
+              Symbols
+              <input type="checkbox" name="symbols" id="symbols" checked />
+            </label>
+          </div>
+          <button><i class="fa-solid fa-bolt"></i> Generate Passwords</button>
+        </form>
+      </div>
+      <div class="passwords">
+        <!-- <p><i class="fa-solid fa-ellipsis"></i></p> -->
+        <input type="text" name="password" />
+        <input type="text" name="password" />
+        <input type="text" name="password" />
+        <input type="text" name="password" />
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
